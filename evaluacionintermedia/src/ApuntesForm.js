@@ -39,6 +39,7 @@ export default function Apuntes() {
           <Grid item xs = {12}>
             <Button variant="contained">Guardar Apunte</Button>
           </Grid>
+          
       </Grid>
     </React.Fragment>
   );

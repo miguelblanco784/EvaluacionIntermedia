@@ -7,7 +7,7 @@ export default function ViewApuntes() {
   return (
     <React.Fragment>
       <Grid container spacing={3}>
-
+        NO EXISTEN APUNTES DISPONIBLES
       </Grid>
     </React.Fragment>
   );

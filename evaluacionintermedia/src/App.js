@@ -103,24 +103,28 @@ export default function Checkout() {
           <React.Fragment>
             {activeStep === steps.length ? (
               <React.Fragment>
+                  ESTA VAINA NO HACE NADA
               </React.Fragment>
             ) : (
               <React.Fragment>
                 {getStepContent(activeStep)}
                 <div className={classes.buttons}>
                   {activeStep !== 0 && (
-                    <Button onClick={handleBack} className={classes.button}>
-                      Back
+                    <Button onClick={handleBack} className={classes.button} color="primary">
+                      Crear Nuevo Apunte
                     </Button>
                   )}
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={handleNext}
-                    className={classes.button}
-                  >
-                    {activeStep === steps.length - 1 ? 'Place order' : 'Siguiente'}
-                  </Button>
+                  {activeStep !== 1 && (
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      onClick={handleNext}
+                      className={classes.button}
+                    >
+                      Ver Apuntes
+                    </Button>
+                  )}
+                  
                 </div>
               </React.Fragment>
             )}
