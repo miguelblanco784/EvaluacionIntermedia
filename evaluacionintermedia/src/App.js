@@ -110,7 +110,7 @@ export default function Checkout() {
                 {getStepContent(activeStep)}
                 <div className={classes.buttons}>
                   {activeStep !== 0 && (
-                    <Button onClick={handleBack} className={classes.button} color="primary">
+                    <Button variant = "contained"  color = "primary" onClick={handleBack} className={classes.button}>
                       Crear Nuevo Apunte
                     </Button>
                   )}
