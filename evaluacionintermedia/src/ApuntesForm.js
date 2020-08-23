@@ -38,11 +38,14 @@ export default function Apuntes() {
           </Grid>
 
           <Grid item xs = {12}>
+            
             <h2>Tags</h2>
             <ButtonGroup color="primary" aria-label="outlined primary button group">
               <Button>REACT</Button>
               <Button>JAVASCRIPT</Button>
               <Button>FRONT-END</Button>
+            </ButtonGroup>
+            <ButtonGroup color = "primary" aria-label = "outlined primary button group">
               <Button>BACK-END</Button>
               <Button>HTML</Button>
               <Button>CSS</Button>
